@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid black;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+   
+    
+}
+
+nav ul{
+    display: flex;
+    
+}
+nav li{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style-type: none;
+    margin-right: 40px;
+    margin-top: 5px;
+}
+a{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+nav li:hover
+{
+    color: gray;
+}
+a:hover{
+    color:gray;
+}
+nav h1{
+    color: rgb(20, 19, 19);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 30px;
+}
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+    "h h h"
+    "sb1 m sb2"
+    "f f f";
+}
+/*.layout div{
+    
+    border: 1px solid black;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.header{
+    grid-area: h;
+    background-color: aqua;
+}
+.sidebar1{
+    grid-area: sb1;
+}
+.mainbar{
+    grid-area:m;
+}
+.sidebar2{
+    grid-area: sb2;
+    
+}
+.footer{
+    grid-area: f;
+}*/
+.top{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25vh 34vh;
+    grid-template-areas: "s s s" "h h h";
+    justify-content: center;
+    align-content: center;
+}
+.text{
+    grid-area: s;
+    background-color: black;
+}
+.text h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: white;
+}
+.text .line1{
+    padding-top: 25px;
+    margin-bottom: 0;
+    margin-left: 120px;
+}
+.text .line2{
+    margin-top: 0;
+}
+.white{
+    grid-area: h;
+    background-color: white;
+    
+}
+.white .para{
+    margin-top: 0;
+    padding: 0 15% 0 15%;
+}
+.white .para-head{
+    font-size: 25px;
+    padding: 3% 15% 0 15%;
+    margin-bottom: 5px;
+    
+}
+
+.achievment{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 300px ;
+    grid-template-areas: "o o o" "cs js hs";
+    width: 100%;
+    height: 550px;
+    background-color: black;
+    background-image: url(bgimg.png);
+    background-size: cover;
+    text-align: center;
+}
+.sec-achievment{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 300px 300px;
+    grid-template-areas: "o o o" "cs js hs";
+    width: 100%;
+    height: 550px;
+    background-color: black;
+    background-image: url(bgimg.png);
+    background-size: cover;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+hr{
+    width: 20%;
+    height: 1px;
+    background-color: white;
+}
+
+.head{
+    padding-top: 50px;
+    color: aliceblue;
+    grid-area: o;
+    text-align: center;
+    height: 100px;
+   
+
+}
+.css{
+
+    margin: 0 15% 0 20%;
+    grid-area: cs;
+    background-color: white;
+    border-radius: 5%;
+    width: 300px;
+    height: 250px;
+}
+.html{
+    margin: 0 15% 0 20%;
+    grid-area: hs;
+    background-color: white;
+    border-radius: 5%;
+    width: 300px;
+    height: 250px;
+}
+.js{
+    margin: 0 15% 0 20%;
+    grid-area: js;
+    background-color: white;
+    border-radius: 5%;
+    width: 300px;
+    height: 250px;
+
+}
+i{
+    
+    border-radius: 100%;
+    padding: 70px 0 0 130px;
+    color: blueviolet;
+    
+}
+img{
+    margin-top: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 400px;
+    grid-template-areas: "a a" " sk pr";
+   
+    align-items: center;
+}
+.title{
+    grid-area: a;
+    text-align: center;
+}
+.program{
+    grid-area: sk;
+}
+.lan{
+    grid-area: pr;
+    text-align: center;
+    margin-right: 170px;
+    padding-right: 50px;
+}
+.lan p{
+    margin-right: 100px;
+}
+.footer{
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    text-align: center;
+}
+input{
+    width: 300px;
+}
